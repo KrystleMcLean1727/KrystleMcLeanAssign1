@@ -1,4 +1,4 @@
-package pickacard;
+package krystle.mclean.s991631727;
 
 /**
  * A class that models playing card Objects. Cards have 
