@@ -28,6 +28,7 @@ public class CardTrick {
         //System.out.println("Great Job!");
       //  else {
                // System.out.println("youre a loser");
+              // I know I need to use .equals to compare just not sure how to...
                 
         
         //SHould show ace of hearts
