@@ -1,4 +1,5 @@
 package krystle.mclean.s991631727;
+import java.util.Random;
 
 /**
  * A class that models playing card Objects. Cards have 
@@ -15,9 +16,17 @@ package krystle.mclean.s991631727;
 public class Card {
 
    private String suit; //clubs, spades, diamonds, hearts
-   private int value;//1-13
+   private int value;    //private int value;//1-13
+
 
    public static final String [] SUITS = {"Hearts", "Diamonds", "Spades", "Clubs"};
+   
+  
+   // made int values string values so that I could include in array plus no calculations so easier 
+   //I only want to call  values 1-13 
+   public static final String [] VALUES = {"Ace", "2", "3","4","5","6","7","8","9","10","J","Q","K"};
+   
+   
     /**
      * @return the suit
      */
@@ -35,9 +44,34 @@ public class Card {
     public int getValue() {
         return value;
     }
+    /**
+     * 
+     * @param value 
+     */
 
     public void setValue(int value) {
         this.value = value;
+    }
+    
+    // Method using Math.random to return a random card suit
+    //type casted to int as I needed to search a whole integer number
+    /**
+     * 
+     * @return suitValue
+     */
+    
+    
+    //Method that finds a random card value it is mulitiplied by 13
+    //because 13 cards in each suit , also typecasted to int 
+    /**
+     * 
+     * @return suitRank
+     */
+    public int aRandomRank()
+    {
+        int suitRank = (int)(Math.random()*13);
+        return suitRank;
+        
     }
     
    
