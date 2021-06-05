@@ -18,19 +18,27 @@ public class CardTrick {
         
         Card[] magicHand = new Card[1];
         
-        //Scanner userInput = new Scanner (System.in);
-        Card myLuckyCard = new Card[1, 2],
-        System.out.println("Krystle's lucky card is " + myLuckyCard);
+        Scanner userInput = new Scanner (System.in);
+       
+// I can''t get to work I tried i.e code commented out        
+
+// Card myLuckyCard = new Card[1, 2],
+        //System.out.println("Krystle's lucky card is " + myLuckyCard);
+        //if(myLuckyCard.equals (userInput))
+        //System.out.println("Great Job!");
+      //  else {
+               // System.out.println("youre a loser");
+                
         
         //SHould show ace of hearts
         
-        //System.out.println("Pick a card any card");
-       // System.out.println("Choose card value: For Face eg. A=1, J=2, Q=3, K=4, 4 = 4 ");
-        //int userCardPicked = userInput.nextInt();
-       // System.out.println("Pick a card suit i.e. Hearts=2, Clubs=4, Spades=3 or Diamonds=1");
-       // int userSuitPicked = userInput.nextInt();
+        System.out.println("Pick a card any card");
+        System.out.println("Choose card value: For Face eg. A=1, J=2, Q=3, K=4, 4 = 4 ");
+        int userCardPicked = userInput.nextInt();
+        System.out.println("Pick a card suit i.e. Hearts=2, Clubs=4, Spades=3 or Diamonds=1");
+        int userSuitPicked = userInput.nextInt();
         
-       // System.out.println("You Card is " + userCardPicked + " of " + userSuitPicked);
+        System.out.println("You Card is " + userCardPicked + " of " + userSuitPicked);
         
 
         for (int i = 0; i < magicHand.length; i++) {
