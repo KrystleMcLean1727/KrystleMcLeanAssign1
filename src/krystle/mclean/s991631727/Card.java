@@ -19,7 +19,7 @@ public class Card {
    private int value;    //private int value;//1-13
 
 
-   public static final String [] SUITS = {"Hearts", "Diamonds", "Spades", "Clubs"};
+   public static final String [] SUITS = {"Diamonds", "Hearts", "Spades", "Clubs"};
    
   
    // made int values string values so that I could include in array plus no calculations so easier 
