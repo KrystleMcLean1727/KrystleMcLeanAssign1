@@ -74,6 +74,13 @@ public class Card {
         
     }
     
+    public int aRandomSuit() 
+    {
+        int suitValue = (int)(Math.random()* 4);
+        return suitValue;
+        
+    }
+    
    
    
     
