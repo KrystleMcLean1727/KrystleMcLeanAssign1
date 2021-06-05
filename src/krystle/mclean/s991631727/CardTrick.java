@@ -16,7 +16,18 @@ public class CardTrick {
     public static void main(String[] args) {
        
         
-        Card[] magicHand = new Card[7];
+        Card[] magicHand = new Card[1];
+        
+        Scanner userInput = new Scanner (System.in);
+        
+        System.out.println("Pick a card any card");
+        System.out.println("Choose card value: For Face eg. A=1, J=2, Q=3, K=4, 4 = 4 ");
+        int userCardPicked = userInput.nextInt();
+        System.out.println("Pick a card suit i.e. Hearts=2, Clubs=4, Spades=3 or Diamonds=1");
+        int userSuitPicked = userInput.nextInt();
+        
+        System.out.println("You Card is " + userCardPicked + " of " + userSuitPicked);
+        
 
         for (int i = 0; i < magicHand.length; i++) {
           
@@ -28,6 +39,9 @@ public class CardTrick {
             //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
             c.setSuit(Card.SUITS[c.aRandomSuit()]);
             magicHand[i] = c;
+        }
+        for(Card magicHandobj : magicHand) {
+            System.out.println("My card is: " + magicHandobj.getValue() + " of " + magicHandobj.getSuit());
         }
         
 

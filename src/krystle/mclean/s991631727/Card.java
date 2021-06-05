@@ -24,7 +24,8 @@ public class Card {
   
    // made int values string values so that I could include in array plus no calculations so easier 
    //I only want to call  values 1-13 
-   public static final String [] VALUES = {"Ace", "2", "3","4","5","6","7","8","9","10","J","Q","K"};
+   //null to make easier for user to not pick 0 but 1 -13 
+   public static final String [] VALUES = {null, "Ace", "2", "3","4","5","6","7","8","9","10","J","Q","K"};
    
    
     /**
